@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header> <h1> Welcome to Pizza Garage</h1>
+    </header>
+    <!--TABLE-->
+    <table align="center">
+        <tr>
+        <td valign="bottom"><img src="pizza.jpeg" alt="pizza" width="100px" height="100px"></td>
+        <td valign="bottom" ><img src="pizza.jpeg" alt="pizza2" width="150px" height="150px"></td>
+        <td valign="bottom"><img src="pizza.jpeg" alt="pizza23" width="200px" height="200px"></td>
+        <td valign="bottom"><img src="pizza.jpeg" alt="pizza4" width="250px" height="250px"></td>
+    </tr>
+    <tr>
+        <td align="center"><h3>Small Pizza</h3> </td>
+        <td align="center"><h3>Medium Pizza</h3> </td>
+        <td align="center"><h3>Large Pizza</h3> </td>
+        <td align="center"><h3>Family Pizza</h3> </td>
+    </tr>
+</table>
+<!--Main section-->
+<main>
+    <!--form section-->
+    <form>
+<!--Personal Data-->
+<!--field section-->
+<fieldset>
+    <legend>Personal Data</legend>
+    <label>First Name:</label>
+    <input type="text" name="firstname">
+    <label>Last Name:</label>
+    <input type="text" name="lastname">
+    <label>Mobile Number:</label>
+    <input type="text" name="mobile">
+    <label>Email:</label>
+    <input type="text" name="email">
+    <label>Address:<textarea name="address"  cols="10" rows="1"></textarea></label>
+   
+</fieldset>
+        <!--Order Details-->
+        <fieldset>
+        <legend>Order Details</legend>
+        <select name="size">
+            <option>Select Pizza Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">Family</option>
+            </select>
+            <select name="Quantity" >
+                <option>Select Quantity</option>
+                <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+            <select name="Shape">
+                <option>Shape</option>
+                <option value="1">Round</option>
+                <option value="2">Square</option>
+
+            </select>
+            <label>Delivery Date:</label><input type="date" name="del.date">
+            <label>Delivery Time:</label> <input type="time" name="time" >
+            
+         </fieldset>
+
+         <!--Cheeses-->
+         <fieldset>
+            <legend>Cheeses</legend>
+           Mozzarella <input type="radio" name="cheeses" id="Mozzarella">
+           Feta <input type="radio" name="cheeses" id="Feta">
+           Cheddar <input type="radio" name="cheeses" id="Cheddar">
+           Parmesan <input type="radio" name="cheeses" id="Parmesan">
+           Reduced fat <input type="radio" name="cheeses" id="Reduced fat">
+                    </fieldset> 
+        
+         <!--Suaces-->
+         <fieldset>
+            <legend>Suaces</legend>
+           Pizza Sauce <input type="radio" name="Suace" id="Pizza Sauce">
+           Hummus<input type="radio" name="Suace" id="Hummus">
+           Buffalo sauce <input type="radio" name="Suace" id="Buffalo">
+           Garlic Ranch Sauce <input type="radio" name="Suace" id="Garlic Ranch Suace">
+           Pesto <input type="radio" name="Suace" id="Pesto">
+           Garlic Sauce<input type="radio" name="Suace" id="Garlic Suace">
+
+                    </fieldset>
+
+            <!--Drinks-->
+         <fieldset>
+            <legend>Drinks</legend>
+           Coke <input type="radio" name="drink" id="Coke">
+           Fanta<input type="radio" name="drink" id="Fanta">
+           Sprite <input type="radio" name="drink" id="Sprite">
+           DEW<input type="radio" name="drink" id="DEW">
+           Pepsi <input type="radio" name="drink" id="Pepsi">
+           Limca<input type="radio" name="drink" id="Limca">
+
+                    </fieldset> 
+                    
+             <!--Toppings-->
+         <fieldset target="_blank">
+            <legend>Choose Topping - $5 Each</legend>
+           Pepperoni <input type="checkbox" name="topping" id="Pepperoni">
+           Mushrooms<input type="checkbox" name="topping" id="Mushrooms">
+           Black Olives<input type="checkbox" name="topping" id="Black Olives">
+           Capsicum<input type="checkbox" name="topping" id="Capsicum">
+           Onion <input type="checkbox" name="topping" id="Onion">
+           Extra cheeses<input type="checkbox" name="topping" id="Extra cheeses">
+
+                    </fieldset> 
+                    
+            <!--Crusts-->        
+           <fieldset>
+            <legend>Crust Types</legend>
+            Thin Crust <input type="radio" name="crust" id="1">
+            Sicilian Crust <input type="radio" name="crust" id="2">
+            Cauliflower Crust <input type="radio" name="crust" id="3">
+            Deep dish <input type="radio" name="crust" id="4">
+           </fieldset>  
+           <!--Payment method-->
+           <fieldset>
+            <legend>Payment Method</legend>
+            <select name="payment">
+                <option>Payment Method</option>
+                <option value="1">Debit Card</option>
+                <option value="2">Credit Card</option>
+            </select>
+            <br>
+            <label>Card Number:</label>
+            <input type="text" name="cardnumber" id="cardnumber">
+            
+            <label>Expiry Date  :</label>
+            <input type="text" name="ex.date" id="exp.date">
+             
+            <label>CVV  :</label>
+            <input type="text" name="cvv" id="cvv">
+             </fieldset>   
+             <br>
+             <input type="submit" value="Submit">
+             <input type="reset" value="Reset">
+             <hr>
+             
+            </form>
+        </main>
+        <!--Footer-->
+        <footer><marquee><h3>Thanks for ordering</h3></marquee></footer>
+
+        
+        
+   
+   
+
+
+</body>
+</html>
